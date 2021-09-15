@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Products</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href = "icons/css/all.min.css">
+    <link href="product-css.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src = "icons/js/all.min.js"></script>
+</head>
+<body>
+    <div id = "navbar">
+
+    </div>
+    <div class="container-fluid" id = "content">
+        <h2 class = "d-inline p-2 align-middle">
+            Product
+        </h2>
+
+        <div class = "d-inline p-2 align-middle">
+            <button class = "btn btn-primary" id = "addProduct">
+                <span><a>+</a> Add</span>
+            </button>
+        </div>
+
+        <div class="input-group d-flex justify-content-end">
+            <label>
+                Search: &nbsp;
+            </label>
+            <input type="text" name = "search" id = "searchProduct">
+        </div>
+
+        <br>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Cost</th>
+                <th>Stock</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody class = "productList">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src = "product-js.js"></script>
+</body>
+</html>

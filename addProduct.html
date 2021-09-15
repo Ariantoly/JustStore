@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="icons/css/all.min.css">
+    <link href="addProduct-css.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="icons/js/all.min.js"></script>
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+    <div class="container-fluid" id="content">
+        <h2>Product Information</h2>
+        <hr>
+
+        <form class="form p-2 align-self-center needs-validation" action="register.php" id="form" method="post"
+            novalidate>
+            <table class="table table-borderless table-responsive">
+                <tr>
+                    <td class = "label">Name</td>
+                    <td><input class="form-control" id="txtName" name="name" type="text" placeholder="Product Name"
+                            minlength="3" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "label">Description</td>
+                    <td><textarea class="form-control" rows="6" id="txtDescription"
+                            placeholder="Description" name="address" minlength="10" required></textarea></td>
+                </tr>
+                <tr>
+                    <td class = "label">Price</td>
+                    <td>
+                        <input class = "form-control" id="txtPrice" name="price" type="text" placeholder="Product Price" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "label">Stock</td>
+                    <td>
+                        <input class = "form-control" id="txtStock" name="stock" type="text" placeholder="Product Stock" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "label">Category</td>
+                    <td>
+                        <select class = "form-control" multiple>
+                            <option value=""></option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Product Photos</h2>
+            <hr>
+            <table class="table table-borderless table-responsive">
+                <input type="file" class="form-control" id="photoProduct" name="photoProduct">
+            </table>
+        </form>
+    </div>
+
+    <script src="addProduct.js"></script>
+</body>
+
+</html>

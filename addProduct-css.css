@@ -1,0 +1,16 @@
+#content{
+    margin-top: 100px;
+    padding: 0px 100px;
+}
+
+.table td > input{
+    width: 500px;
+}
+
+.table .label{
+    column-width: 200px;
+}
+
+hr{
+    border-color: orange;
+}

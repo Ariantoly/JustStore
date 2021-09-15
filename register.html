@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="icons/css/all.min.css" rel="stylesheet">
+    <link href="register-css.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="icons/js/all.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <a href="home.html">
+            <h1>JustStore</h1>
+        </a>
+    </div>
+    <div class="container-fluid">
+        <div class="d-md-flex flex-column">
+            <div class="p-2 align-self-center" id="title">
+                <h1>Register</h1>
+                Already have JustStore account? <a href="login.html">Login</a>
+                <hr>
+            </div>
+            <form class="form p-2 align-self-center needs-validation" action="register.php" id="form" method="post"
+                oninput="rePassword.setCustomValidity(rePassword.value != password.value ? 'Re-Password must be same with Password' : ''); filePP.setCustomValidity(fileValidation() == 'ext' ? 'Extension allowed: png, jpg, jpeg' : fileValidation() == 'size' ? 'Size must be less than 2 MB' : '')"
+                enctype = "multipart/form-data" novalidate>
+                <table class="table table-borderless table-responsive table">
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            <input class="form-control" id="txtName" name="name" type="text" placeholder="e.g. John Doe"
+                                minlength="3" required>
+                            <div class="invalid-feedback" id="alertName">Input Name</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Gender
+                        </td>
+                        <td>
+                            <div class="form-check-inline">
+                                <label class="form-check-label" for="male">
+                                    <input type="radio" id="male" class="form-check-input" name="gender" value = "Male" required>Male
+                                    <div class="invalid-feedback">Choose Gender</div>
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label" for="female">
+                                    <input type="radio" id="female" class="form-check-input" value = "Female" name="gender"
+                                        required>Female
+                                    <div class="invalid-feedback">Choose Gender</div>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Address
+                        </td>
+                        <td>
+                            <textarea class="form-control" rows="4" id="txtAddress" placeholder="Address" name = "address" required
+                                minlength="10"></textarea>
+                            <div class="invalid-feedback" id="alertAddress">Input Address</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Phone
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" id="txtPhone" name = "phone" placeholder="e.g. 085716343xxx"
+                                required minlength="10" maxlength="20" pattern="[0-9+]{10,15}">
+                            <div class="invalid-feedback" id="alertPhone">Input Phone</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email
+                        </td>
+                        <td>
+                            <input type="email" class="form-control" id="txtEmail" name = "email" placeholder="example@mail.com"
+                                required>
+                            <div class="invalid-feedback" id="alertEmail">Input Email</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="txtPassword" placeholder="Password"
+                                    minlength="6" name="password" required>
+                                <button class="btn btn-outline-secondary" id="btnViewP" type="button">
+                                    <i class="fas fa-eye" id="eyeP"></i>
+                                </button>
+                                <div class="invalid-feedback" id="alertPassword">Input Password</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Re-Password
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="txtRePassword"
+                                    placeholder="Confirm Password" name="rePassword" required>
+                                <button class="btn btn-outline-secondary" id="btnViewRP" type="button">
+                                    <i class="fas fa-eye" id="eyeRP"></i>
+                                </button>
+                                <div class="invalid-feedback" id="alertRePassword">Re-Password must be same with Password</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Profile Picture
+                        </td>
+                        <td>
+                            <input type="file" class="form-control" id="filePP" name="filePP">
+                            <div class="invalid-feedback" id="alertPP"> </div>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <button class="btn btn-success btn-block register" type="submit">Register</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="register-js.js"></script>
+</body>
+
+</html>

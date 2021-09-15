@@ -1,0 +1,143 @@
+<link href = "nav-css.css" rel = "stylesheet">
+
+<nav class="navbar navbar-expand-md fixed-top" id="nav">
+    <div class="container-fluid" id="guest">
+        <a href = "home.html" class="navbar-brand justStore">JustStore</a>
+        <form class="form-inline">
+            <div class="input-group">
+                <input type="text" placeholder="Search..." name="search" class = "search">
+                <button class="btn btn-outline-secondary btnSearch" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </form>
+
+        <div class="btn">
+            <button class="btn btn-outline-primary" id = "login">Login</button>
+            <button class="btn btn-primary" id = "register">Register</button>
+        </div>
+    </div>
+
+    <!-- Customer -->
+
+    <div class="container-fluid" id="customer">
+        <a href = "home.html" class="navbar-brand justStore">JustStore</a>
+        <form class="form-inline">
+            <div class="input-group">
+                <input type="text" placeholder="Search..." name = "search" class = "search">
+                <button class="btn btn-outline-secondary btnSearch" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </form>
+
+        <div class = "btn">
+            <button class = "btn btn-link shoppingCart">
+                <i class = "fas fa-shopping-cart"></i>
+            </button>
+        </div>
+
+        <div class = "dropdown">
+            <button class = "btn btn-basic dropdown-toggle profile" data-toggle = "dropdown" type = "button">
+                <img src = "" alt = "Profile Picture" class = "img-fluid rounded-circle profilePicture">
+                <span class = "name"></span>
+            </button>
+            <div class = "dropdown-menu dropdown-menu-right">
+                <a class = "dropdown-item">Shopping History</a>
+                <a class = "dropdown-item">My Profile</a>
+                <a class = "dropdown-item logout">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Staff -->
+
+    <div class="container-fluid" id="staff">
+        <a href = "home.html" class="navbar-brand justStore">JustStore</a>
+        <form class="form-inline">
+            <div class="input-group">
+                <input type="text" placeholder="Search..." name = "search" class = "search">
+                <button class="btn btn-outline-secondary btnSearch" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </form>
+
+        <div class = "btn">
+            <button class = "btn btn-link shoppingCart">
+                <i class = "fas fa-shopping-cart"></i>
+            </button>
+        </div>
+
+        <div class = "dropdown">
+            <button class = "btn btn-link author" data-toggle = "dropdown" type = "button">
+                <i class = "fas fa-user-cog"></i>
+            </button>
+            <div class = "dropdown-menu dropdown-menu-right">
+                <a class = "dropdown-item">Manage Couriers</a>
+                <a class = "dropdown-item">Manage Categories</a>
+                <a class = "dropdown-item">Manage Products</a>
+            </div>
+        </div>
+
+        <div class = "dropdown">
+            <button class = "btn btn-basic dropdown-toggle profile" data-toggle = "dropdown" type = "button">
+                <img src = "" alt = "Profile Picture" class = "img-fluid rounded-circle profilePicture">
+                <span class = "name"></span>
+            </button>
+            <div class = "dropdown-menu dropdown-menu-right">
+                <a href = "" class = "dropdown-item">Shopping History</a>
+                <a href = "" class = "dropdown-item">My Profile</a>
+                <a href = "product.html" class = "dropdown-item logout">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin -->
+
+    <div class="container-fluid" id="admin">
+        <a href = "home.html" class="navbar-brand justStore">JustStore</a>
+        <form class="form-inline">
+            <div class="input-group">
+                <input type="text" placeholder="Search..." name = "search" class = "search">
+                <button class="btn btn-outline-secondary btnSearch" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </form>
+
+        <div class = "btn">
+            <button class = "btn btn-link shoppingCart">
+                <i class = "fas fa-shopping-cart"></i>
+            </button>
+        </div>
+
+        <div class = "dropdown">
+            <button class = "btn btn-link author" data-toggle = "dropdown" type = "button">
+                <i class = "fas fa-user-cog"></i>
+            </button>
+            <div class = "dropdown-menu dropdown-menu-right">
+                <a class = "dropdown-item">Manage Staffs/Admin</a>
+                <a class = "dropdown-item">Manage Slider</a>
+                <div class = "dropdown-divider"></div>
+                    <a href = "" class = "dropdown-item">Manage Couriers</a>
+                    <a href = "" class = "dropdown-item">Manage Categories</a>
+                    <a href = "product.html" class = "dropdown-item">Manage Products</a>
+            </div>
+        </div>
+
+        <div class = "dropdown">
+            <button class = "btn btn-basic dropdown-toggle profile" data-toggle = "dropdown" type = "button">
+                <img src = "" alt = "Profile Picture" class = "img-fluid rounded-circle profilePicture">
+                <span class = "name"></span>
+            </button>
+            <div class = "dropdown-menu dropdown-menu-right">
+                <a class = "dropdown-item">Shopping History</a>
+                <a class = "dropdown-item">My Profile</a>
+                <a class = "dropdown-item logout">Logout</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script src = "nav-js.js"></script>

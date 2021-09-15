@@ -1,0 +1,42 @@
+hr{
+    background-color: orange;
+}
+
+#header{
+    text-align: center;
+}
+
+#header > a{
+    text-decoration: none;
+}
+
+.login{
+    background-color: orange;
+    border: none;
+}
+
+.table td{
+    padding-left: 0px;
+}
+
+.table td > input{
+    width: 250px;
+}
+
+.form > a{
+    text-align: center;
+    text-decoration: none;
+}
+
+#forgetPassword{
+    text-align: center;
+}
+
+#title{
+    width: 360px;
+}
+
+#btnView{
+    color: orange;
+    border-radius: 0px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href = "bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href = "icons/css/all.min.css" rel = stylesheet>
+    <link href = "login-css.css" rel = "stylesheet">
+    <script src = "jquery.min.js"></script>
+    <script src = "bootstrap/bootstrap.min.js"></script>
+    <script src = "icons/js/all.min.js" rel = "stylesheet"></script>
+    
+</head>
+<body>
+    <div id = "header">
+        <a href = "home.html"><h1>JustStore</h1></a>
+    </div>
+    <div class = "container-fluid">
+        <div class = "d-md-flex flex-column">
+            <div class = "p-2 align-self-center" id = "title">
+                <h1>Login</h1>
+                Don't have JustStore account? <a href = "register.html">Register</a>
+                <hr>
+            </div>
+            <form class = "form p-2 align-self-center" action = "home.html" id = "form">
+                <table class = "table table-borderless table-responsive table">
+                    <tr>
+                        <td>
+                            Email
+                        </td>
+                        <td>
+                            <input class = "form-control" id = "txtEmail" name = "email" type = "email" placeholder = "example@mail.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password
+                        </td>
+                        <td>
+                            <div class = "input-group">
+                                <input class = "form-control" id = "txtPassword" name = "password" type = "password" placeholder = "Password">
+                                <button class = "btn btn-outline-secondary" id = "btnView" type = "button">
+                                    <i class = "fas fa-eye" id = "eye"></i>
+                                </button>
+                            </div> 
+                        </td>
+                    </tr>
+                </table>
+                <div class = "form-check">
+                    <input type = "checkbox" class = "form-check-input" id = "chxRemember"> Remember me
+                </div>
+                
+                <br>
+                <button class="btn btn-success btn-block login" type="submit">Login</button>
+                <div id = "forgetPassword">
+                    <a href = "">Forget Password?</a>
+                </div>
+                
+            </form>
+        </div>
+
+        <div id = "data">
+
+        </div>
+        
+    </div>
+    
+    <script src = "login-js.js"></script>
+</body>
+</html>

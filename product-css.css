@@ -1,0 +1,17 @@
+#content{
+    margin-top: 100px;
+    padding: 0px 100px;
+}
+
+#addProduct{
+    background-color: orange;
+    border: none;
+}
+
+#addProduct:hover{
+    background-color: none;
+}
+
+#addProduct > span > a{
+    font-weight: bold;
+}

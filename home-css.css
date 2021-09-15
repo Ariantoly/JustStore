@@ -1,0 +1,105 @@
+.justStore{
+    font-weight: bold;
+    color: orange;
+}
+
+#nav{
+    background-color: white;
+    border-bottom: solid lightgray 2px;
+}
+
+.search{
+    width: 820px;
+}
+
+.btnSearch{
+    background-color: white;
+    border-radius: 0px;
+}
+
+.btnSearch:hover{
+    background-color: orange;
+}
+
+.btnSearch > i{
+    color: orange;
+}
+
+.profilePicture{
+    width: 25px;
+}
+
+.profile{
+    color: black;
+}
+
+.dropdown > .dropdown-menu > a:hover{
+    background-color: orange;
+}
+
+#login, #login:hover{
+    border-color: orange;
+    color: orange;
+    background-color: white;
+}
+
+#register, #register:hover{
+    background-color: orange;
+    border-color: orange;
+}
+
+#content{
+    margin-top: 100px;
+    padding: 0px 100px;
+}
+
+.navCategory{
+    background-color: white;
+    top: 68px;
+}
+
+.shoppingCart, .shoppingCart:hover{
+    text-decoration: none;
+    color: gray;
+}
+
+.shoppingCart:hover{
+    color: orange;
+}
+
+.author, .author:hover, .author:active{
+    color: black;
+    text-decoration: none;
+}
+
+.author:hover{
+    color: orange;
+}
+
+.carousel-inner{
+    max-height: 300px;
+}
+
+.carousel-inner > .carousel-item > img{
+    height: 300px;
+}
+
+.sticky-top > .btn > span{
+    color: black;
+}
+
+.sticky-top > .btn:hover{
+    background-color: orange;
+}
+
+.sticky-top > .btn:focus{
+    background-color: orange;
+}
+
+#guest, #customer, #staff{
+    display: none;
+}
+
+.dropdown-divider{
+    border-color: orange;
+}
